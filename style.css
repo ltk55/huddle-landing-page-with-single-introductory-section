@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+:root {
+  --color-violet: hsl(257, 40%, 49%);
+  --color-soft-magenta: hsl(300, 69%, 71%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--color-violet) url("./images/bg-mobile.svg") no-repeat;
+  min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo {
+  width: 40%;
+  margin: 20px 20px;
+}
+
+.illustration {
+  width: 100%;
+  padding: 30px;
+}
+
+.content h1 {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 30px 30px 0px 30px;
+  line-height: 1.5;
+}
+
+.content p {
+  color: #fff;
+  width: 90%;
+  line-height: 1.5;
+}
+
+.btn {
+  font-family: inherit;
+  margin: 20px 0;
+  border-radius: 50px;
+  border: none;
+  padding: 10px 70px;
+}
+
+.btn:hover {
+  background-color: var(--color-soft-magenta);
+  color: #fff;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.social .fab {
+  border: 1px solid #fff;
+  border-radius: 50px;
+  padding: 7px;
+  color: #fff;
+  font-size: 1rem;
+  margin: 20px 5px;
+  text-decoration: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
