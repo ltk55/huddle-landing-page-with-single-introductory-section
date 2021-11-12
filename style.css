@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
 
 :root {
-  --color-violet: hsl(257, 40%, 49%);
-  --color-soft-magenta: hsl(300, 69%, 71%);
+  --color-primary: hsl(257, 40%, 49%);
+  --color-secondary: hsl(300, 69%, 71%);
 }
 
 * {
@@ -11,7 +11,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: var(--color-violet) url("./images/bg-mobile.svg") no-repeat;
+  background: var(--color-primary) url("./images/bg-mobile.svg") no-repeat;
   min-height: 100vh;
 }
 
@@ -56,7 +56,7 @@ body {
 }
 
 .btn:hover {
-  background-color: var(--color-soft-magenta);
+  background-color: var(--color-secondary);
   color: #fff;
   transition: 0.2s ease-in-out;
   cursor: pointer;
@@ -79,6 +79,12 @@ body {
   font-size: 1rem;
   margin: 20px 5px;
   text-decoration: none;
+}
+
+.social .fab:hover {
+  color: var(--color-secondary);
+  border-color: var(--color-secondary);
+  transition: 0.2s ease-in-out;
 }
 
 .attribution {
